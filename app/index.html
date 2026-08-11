@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+<meta name="theme-color" content="#101116"/>
+<title>Aló Paisano Radio</title>
+<link rel="icon" href="/assets/logo.svg">
+<link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+<div class="bgGlow glow1"></div><div class="bgGlow glow2"></div>
+<main class="page">
+  <section class="top">
+    <div class="live"><span></span> EN VIVO</div>
+    <div class="brand">FG MEDIA RADIO</div>
+  </section>
+
+  <section class="hero">
+    <div class="rings">
+      <div class="ring r1"></div><div class="ring r2"></div><div class="ring r3"></div>
+      <div class="logoShell"><img id="logo" src="/assets/logo.svg" alt="Logo"></div>
+    </div>
+    <div class="station">
+      <p id="tagline">Cargando…</p>
+      <h1 id="stationName">ALÓ PAISANO RADIO</h1>
+    </div>
+  </section>
+
+  <section class="now">
+    <div class="metaLabel">SONANDO AHORA</div>
+    <h2 id="song">Aló Paisano Radio</h2>
+    <p id="artist">Transmisión en vivo</p>
+    <div class="metaStatus"><span class="dot"></span><span id="metaState">Conectando metadatos…</span></div>
+  </section>
+
+  <section class="playerCard">
+    <audio id="audio" preload="none"></audio>
+    <div class="visualizer" id="visualizer"></div>
+    <div class="controls">
+      <button id="mute" class="ghost" aria-label="Silenciar">🔊</button>
+      <button id="play" class="play" aria-label="Reproducir">▶</button>
+      <button id="share" class="ghost" aria-label="Compartir">↗</button>
+    </div>
+    <div class="volume">
+      <span>VOL</span><input id="volume" type="range" min="0" max="1" step="0.01" value="0.85"><span id="volNum">85</span>
+    </div>
+    <p id="status">Toca reproducir para escuchar</p>
+  </section>
+
+  <section id="historyCard" class="historyCard">
+    <div class="historyHead"><div><small>HISTORIAL</small><h3>Últimas canciones</h3></div><span>Auto</span></div>
+    <div id="history" class="history"><div class="empty">Esperando información de la transmisión…</div></div>
+  </section>
+
+  <section class="socials" id="socials"></section>
+  <footer>Diseñada por FG Media • Aló Paisano Radio</footer>
+</main>
+<script src="./app.js"></script>
+</body>
+</html>
