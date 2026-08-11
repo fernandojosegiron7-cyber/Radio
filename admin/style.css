@@ -1,0 +1,10 @@
+
+:root{--bg:#0c0d11;--panel:#15161c;--text:#fff;--muted:#a0a3ad;--accent:#f7c65a;--border:#2b2d36}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 90% 0,#35200d,transparent 30%),var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif}
+.shell{max-width:900px;margin:auto;padding:40px 18px 70px}.hidden{display:none!important}.card{background:rgba(21,22,28,.94);border:1px solid var(--border);border-radius:22px;padding:20px;margin-top:15px;box-shadow:0 24px 70px rgba(0,0,0,.18)}
+.login{max-width:430px;margin:12vh auto 0;text-align:center}.login h1{margin:8px 0 5px}.login p{color:var(--muted);margin:0 0 18px}.badge{color:var(--accent);font-size:.68rem;letter-spacing:.17em;font-weight:850}
+input:not([type=checkbox]){width:100%;background:#0f1015;border:1px solid var(--border);color:#fff;border-radius:12px;padding:13px;outline:none}input[type=color]{height:46px;padding:5px!important}.login button{width:100%;margin-top:10px}
+button{border:0;border-radius:13px;padding:13px 18px;font-weight:850;cursor:pointer;background:var(--accent);color:#111}.secondary{background:#242630;color:#fff;border:1px solid var(--border)}
+.head{display:flex;justify-content:space-between;gap:20px;align-items:flex-start}.head h1{font-size:clamp(1.8rem,5vw,3rem);margin:6px 0}.head p{margin:0;color:var(--muted)}.head a{color:#111;text-decoration:none;background:var(--accent);padding:12px 15px;border-radius:13px;font-weight:850;white-space:nowrap}
+.card h2{font-size:1rem;margin:0 0 15px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}label{display:grid;gap:7px;color:#c7c9d1;font-size:.76rem}.full{grid-column:1/-1}.check{display:flex;align-items:center;gap:8px}.actions{display:flex;justify-content:flex-end;gap:10px;margin-top:18px}.msg{min-height:21px;color:#ff8a85;font-size:.8rem;margin-top:9px}.msg.ok{color:#7fdb96}.right{text-align:right}small{color:#7d808b}
+@media(max-width:650px){.grid{grid-template-columns:1fr}.full{grid-column:auto}.head{display:block}.head a{display:inline-block;margin-top:14px}}
