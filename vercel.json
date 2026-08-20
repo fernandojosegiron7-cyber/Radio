@@ -1,21 +1,20 @@
 {
-  "cleanUrls": true,
-  "trailingSlash": true,
   "headers": [
     {
-      "source": "/(.*)",
+      "source": "/admin.html",
       "headers": [
         {
-          "key": "X-Content-Type-Options",
-          "value": "nosniff"
-        },
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        }
+      ]
+    },
+    {
+      "source": "/data/config.json",
+      "headers": [
         {
-          "key": "Referrer-Policy",
-          "value": "strict-origin-when-cross-origin"
-        },
-        {
-          "key": "X-Frame-Options",
-          "value": "SAMEORIGIN"
+          "key": "Cache-Control",
+          "value": "no-cache, no-store, must-revalidate"
         }
       ]
     }

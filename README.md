@@ -1,44 +1,32 @@
-# ALÓ PAISANO RADIO — Panel admin privado + Supabase
+# RadioTV PWA COMPLETO v5
 
-## Qué incluye
-- `/app/` reproductor público
-- `/admin/` panel privado con contraseña
-- `/api/config` entrega configuración pública
-- `/api/admin-login` verifica contraseña
-- `/api/admin-save` guarda cambios en Supabase
-- Metadatos Zeno, historial, volumen, compartir
-- Cambios del panel se reflejan para todos los visitantes
-- Permite URL o imagen pequeña (máx. 1.2 MB) para logo/fondo
+Proyecto completo para GitHub + Vercel.
 
-## 1. Crear Supabase
-Crea un proyecto gratuito en Supabase.
+## Incluye
+- Inicio
+- Radio
+- TV
+- Noticias
+- Programación
+- Modo claro/oscuro/automático
+- Fondos independientes
+- Panel admin
+- Guardado directo a GitHub
+- Subida de imágenes
+- PWA instalable
+- Service Worker actualizado
 
-En SQL Editor, ejecuta el contenido de `supabase-setup.sql`.
+## Vercel Environment Variables
+ADMIN_PASSWORD
+SESSION_SECRET
+GITHUB_OWNER
+GITHUB_REPO
+GITHUB_BRANCH
+GITHUB_TOKEN
 
-En Project Settings > API copia:
-- Project URL
-- service_role key (NO la publiques)
+## Panel
+/admin.html
 
-## 2. Subir a Vercel
-Sube este proyecto a Vercel.
-
-En Vercel > Project > Settings > Environment Variables crea:
-- `SUPABASE_URL` = Project URL de Supabase
-- `SUPABASE_SERVICE_ROLE_KEY` = service_role key
-- `ADMIN_PASSWORD` = tu contraseña privada (mínimo 6 caracteres)
-
-Después haz Redeploy.
-
-## 3. Usar
-- Reproductor: `https://tu-dominio.vercel.app/app/`
-- Admin: `https://tu-dominio.vercel.app/admin/`
-
-El público no puede cambiar la configuración. Solo quien conozca `ADMIN_PASSWORD` puede guardar cambios.
-
-## Seguridad
-La contraseña y la service_role key permanecen en variables de entorno del servidor de Vercel.
-Nunca pongas la service_role key dentro del HTML o JavaScript del navegador.
-
-
-## Corrección Supabase 2026
-Compatible con claves nuevas `sb_secret_...`: se envían solo por `apikey`, no como Bearer JWT.
+## Importante
+Usa streams HTTPS.
+Para TV se recomienda HLS .m3u8 compatible con navegador/CORS.

@@ -1,0 +1,15 @@
+RADIO TV PWA COMPLETO v5
+
+1. Sube TODO el contenido de esta carpeta a GitHub.
+2. Importa el repositorio en Vercel.
+3. En Vercel > Settings > Environment Variables agrega:
+   ADMIN_PASSWORD
+   SESSION_SECRET
+   GITHUB_OWNER
+   GITHUB_REPO
+   GITHUB_BRANCH=main
+   GITHUB_TOKEN
+4. Haz Redeploy.
+5. Abre /admin.html
+6. Configura Radio, TV, Noticias, apariencia y redes.
+7. Pulsa Guardar en GitHub.
